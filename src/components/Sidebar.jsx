@@ -1,31 +1,16 @@
 import React from "react";
 import "../index.css";
-import { AiOutlineMenu, AiFillYoutube } from "react-icons/ai";
+// import { AiOutlineMenu, AiFillYoutube } from "react-icons/ai";
 import { MdHomeFilled } from "react-icons/md";
 
 function Sidebar({ menu, openMenu }) {
   return (
     <div className="sidebar">
-      <div className="w-full items-center pt-3 flex mr-4">
-        <div className="w-full flex px-[1.4rem]">
-          <button onClick={openMenu}>
-            <AiOutlineMenu
-              size="1.3rem"
-              className="cursor-pointer mr-[1.5rem] ml-[0.1rem]"
-            />
-          </button>
-
-          <h1 className="text-[1.3rem] font-[600] text-[#141414] flex items-center cursor-pointer font-roboto tracking-[-1.5px]">
-            <AiFillYoutube size="2rem" className="text-[red]" />
-            YouTube
-          </h1>
-        </div>
-      </div>
       {!menu ? (
-        <div className="sidebar pb-4 border-b-[1px] w-[70px] pt-5">
+        <div className="sidebar pb-4 border-b-[1px] w-[70px] pt-5 space-y-3">
           <h1 className="hover:bg-[#c9c8c84d] w-full py-3 text-[10px] text-center flex flex-col items-center cursor-pointer">
             <span className="material-symbols-outlined text-[1.7rem] ">
-              Home
+              <MdHomeFilled />
             </span>{" "}
             Home
           </h1>
@@ -55,7 +40,7 @@ function Sidebar({ menu, openMenu }) {
           </h1>
         </div>
       ) : (
-        <div className="scroll overflow-y-scroll w-full h-[90vh] pr-1 pt-6 pb-8">
+        <div className="scroll overflow-y-scroll w-[240px] h-[90vh] pr-1 pt-3 pb-8">
           <div className="pb-4 border-b-[1px]">
             <h1 className="bg-[#c9c8c87c] w-full px-[1.4rem] py-[0.5rem] font-semibold flex items-center text-[14px] cursor-pointer">
               <span className="flex">
@@ -124,34 +109,34 @@ function Sidebar({ menu, openMenu }) {
               EXPLORE
             </h1>
             <h1 className="hover:bg-[#c9c8c84d] w-full px-[1.4rem] py-[0.5rem] flex items-center text-[14px] ursor-pointer">
-              <span className="material-symbols-outlined text-[1.5rem] mr-6">
-                video_library
+              <span class="material-symbols-outlined text-[1.5rem] mr-6">
+                theaters
               </span>
               Movies & Shows
             </h1>
             <h1 className="hover:bg-[#dbdada5d] w-full px-[1.4rem] py-[0.5rem]  flex items-center text-[14px] cursor-pointer">
-              <span className="material-symbols-outlined text-[1.5rem] mr-6">
-                history
-              </span>{" "}
+              <span class="material-symbols-outlined text-[1.5rem] mr-6">
+                stadia_controller
+              </span>
               Gaming
             </h1>
             <h1 className="hover:bg-[#dbdada5d] w-full px-[1.4rem] py-[0.5rem]  flex items-center text-[14px] cursor-pointer">
-              <span className="material-symbols-outlined text-[1.5rem] mr-6">
-                add_to_queue
-              </span>{" "}
+              <span class="material-symbols-outlined text-[1.5rem] mr-6">
+                lightbulb
+              </span>
               Learning
             </h1>
             <h1 className="hover:bg-[#dbdada5d] w-full px-[1.4rem] py-[0.5rem]  flex items-center text-[14px] cursor-pointer">
-              <span className="material-symbols-outlined text-[1.5rem] mr-6">
-                add_to_queue
-              </span>{" "}
+              <span class="material-symbols-outlined text-[1.5rem] mr-6">
+                sports_basketball
+              </span>
               Sports
             </h1>
             <h1 className="hover:bg-[#dbdada5d] w-full px-[1.4rem] py-[0.5rem]  flex items-center text-[14px] cursor-pointer">
-              <span className="material-symbols-outlined text-[1.5rem] mr-6">
-                add_to_queue
-              </span>{" "}
-              Your videos
+              <span class="material-symbols-outlined text-[1.5rem] mr-6">
+                styler
+              </span>
+              Fashion
             </h1>
           </div>
         </div>
