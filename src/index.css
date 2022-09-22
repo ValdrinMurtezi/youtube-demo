@@ -37,7 +37,7 @@ body::-webkit-scrollbar-thumb {
 .tags {
   background-color: rgba(255, 255, 255, 0.986);
   backdrop-filter: blur(20px);
-  width: calc(100% - auto);
+  width: calc(100% - 5%);
   row-gap: 0.3rem;
   overflow-x: scroll !important;
 }
