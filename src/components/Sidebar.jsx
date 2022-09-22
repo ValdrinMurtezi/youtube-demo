@@ -1,9 +1,8 @@
 import React from "react";
 import "../index.css";
-// import { AiOutlineMenu, AiFillYoutube } from "react-icons/ai";
 import { MdHomeFilled } from "react-icons/md";
 
-function Sidebar({ menu, openMenu }) {
+function Sidebar({ menu }) {
   return (
     <div className="sidebar">
       {!menu ? (
