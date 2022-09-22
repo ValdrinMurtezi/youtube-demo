@@ -3,7 +3,7 @@ import "../index.css";
 
 function Tags() {
   return (
-    <div className="tags z-[99] sticky top-[56px] min-h-[4rem] w-full py-2 border-y-[1px] flex-wrap flex items-center justify-center space-x-4 mx-auto">
+    <div className="tags z-[99] sticky top-[51px] min-h-[3.5rem] w-full mb-2 border-y-[1px] flex-wrap flex items-center justify-center space-x-4 mx-auto">
       <span className="bg-[#bbbdbb3d] hover:bg-[#bbbdbb56] cursor-pointer border-[0.5px] border-[#8080804f] px-3 py-[2px] rounded-3xl">
         All
       </span>

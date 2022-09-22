@@ -2,20 +2,13 @@ import React, { useState, useEffect } from "react";
 import "../index.css";
 import { AiFillYoutube } from "react-icons/ai";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function Body() {
   const [data, setData] = useState([]);
   const KEY = "AIzaSyDbtolgbe0-IAN-ho1UHrrylup9JK6KffY";
   const API =
     "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=20&regionCode=US";
-
-  // const fetchData = async () => {
-  //   const response = await axios.get(`${API}&key=${KEY}`).catch((error) => {
-  //     console.log("Error", error);
-  //   });
-  //   setData(response);
-  //   console.log(response);
-  // };
 
   useEffect(() => {
     // fetchData();
@@ -54,21 +47,26 @@ function Body() {
         <div className="videos-container w-full gap-5 text-[black] pt-8 bg-[#bbbdbb3d] px-4">
           {data.map((video) => {
             return (
-              <div key={video.id} className="w-full h-full">
-                {" "}
-                <img
-                  src={video.snippet.thumbnails.medium.url}
-                  className="w-full h-[9rem]"
-                  alt=""
-                />
-                <h1 className="font-[500] pb-3">{video.snippet.title}</h1>
-                <p className="text-sm text-[#4b4a4a]">
-                  {video.snippet.channelTitle}
-                </p>
-                <p className="text-sm text-[#4b4a4a]">
-                  Published on: {video.snippet.publishedAt.slice(0, 10)}
-                </p>
-              </div>
+              <Link to={video.id}>
+                <div
+                  key={video.id}
+                  className="w-full h-full cursor-pointer pb-4"
+                >
+                  {" "}
+                  <img
+                    src={video.snippet.thumbnails.medium.url}
+                    className="w-full h-[9rem]"
+                    alt=""
+                  />
+                  <h1 className="font-[500] pb-3">{video.snippet.title}</h1>
+                  <p className="text-sm text-[#4b4a4a]">
+                    {video.snippet.channelTitle}
+                  </p>
+                  <p className="text-sm text-[#4b4a4a]">
+                    Published on: {video.snippet.publishedAt.slice(0, 10)}
+                  </p>
+                </div>
+              </Link>
             );
           })}
         </div>

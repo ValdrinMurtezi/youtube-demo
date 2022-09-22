@@ -10,13 +10,16 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 10px;
-  padding: 0 5px;
+  width: 12px;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: rgba(126, 126, 126, 0.836);
   border-radius: 15px;
+  border-right: 2px white solid;
+  border-left: 2px white solid;
+
+  background-clip: padding-box;
 }
 
 .material-symbols-outlined {

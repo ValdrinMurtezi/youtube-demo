@@ -3,6 +3,8 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Body from "./Body";
 import Tags from "./Tags";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import PlayingVideo from "./Playing-Video";
 
 function Main() {
   const [menu, setMenu] = useState(true);
