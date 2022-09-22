@@ -30,16 +30,33 @@ body::-webkit-scrollbar-thumb {
 .navbar {
   position: sticky;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.973);
+  background-color: rgba(255, 255, 255, 0.986);
   backdrop-filter: blur(20px);
   z-index: 10;
 }
 .tags {
-  background-color: rgba(255, 255, 255, 0.952);
+  background-color: rgba(255, 255, 255, 0.986);
   backdrop-filter: blur(20px);
-  width: 100%;
+  width: calc(100% - auto);
   row-gap: 0.3rem;
-  overflow-x: auto !important;
+  overflow-x: scroll !important;
+}
+.tags::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+.tags::-webkit-scrollbar-thumb {
+  background-color: rgba(126, 126, 126, 0.836);
+  border-radius: 20px;
+  visibility: hidden;
+}
+.tags:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+.option {
+  display: flex;
+
+  flex: 0 0 auto;
 }
 
 .videos-container {
@@ -49,7 +66,7 @@ body::-webkit-scrollbar-thumb {
 
 .sidebar {
   position: sticky !important;
-  top: 3.2rem;
+  top: 3.5rem;
 }
 
 .scroll::-webkit-scrollbar {

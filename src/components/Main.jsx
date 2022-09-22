@@ -24,6 +24,33 @@ function Main() {
           <Body />
         </div>
       </div>
+      <div className="flex md:hidden items-center py-2 w-full h-[3rem] border-t-[1px] sticky bottom-0 bg-[#fffffff6] ">
+        <h1 className="hover:bg-[#c9c8c84d] w-full py-3 text-[10px] text-center flex flex-col items-center cursor-pointer">
+          <span className="material-symbols-outlined text-[1.7rem] ">home</span>{" "}
+          Home
+        </h1>
+        <h1 className="hover:bg-[#dbdada3b] w-full py-3 text-[10px] text-center flex flex-col items-center cursor-pointer">
+          <span className="material-symbols-outlined text-[1.6rem] ">
+            explore
+          </span>
+          Explore
+        </h1>
+        <h1 className="hover:bg-[#dbdada3b] w-full py-3 text-[10px] text-center flex flex-col items-center cursor-pointer">
+          <span class="material-symbols-outlined text-[2rem]">add_circle</span>
+        </h1>
+        <h1 className="hover:bg-[#dbdada3b] w-full py-3 text-[10px] text-center flex flex-col items-center cursor-pointer">
+          <span className="material-symbols-outlined text-[1.6rem] ">
+            subscriptions
+          </span>{" "}
+          Subscriptions
+        </h1>
+        <h1 className="hover:bg-[#c9c8c84d] w-full py-3 text-[10px] text-center flex flex-col items-center cursor-pointer">
+          <span className="material-symbols-outlined text-[1.6rem] ">
+            video_library
+          </span>{" "}
+          Library
+        </h1>
+      </div>
     </div>
   );
 }

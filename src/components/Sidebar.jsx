@@ -40,7 +40,7 @@ function Sidebar({ menu, openMenu }) {
           </h1>
         </div>
       ) : (
-        <div className="scroll overflow-y-scroll w-[240px] h-[90vh] pr-1 pt-3 pb-8">
+        <div className="hidden md:block scroll overflow-y-scroll w-[240px] h-[90vh] pr-1 pt-3 pb-8">
           <div className="pb-4 border-b-[1px]">
             <h1 className="bg-[#c9c8c87c] w-full px-[1.4rem] py-[0.5rem] font-semibold flex items-center text-[14px] cursor-pointer">
               <span className="flex">
