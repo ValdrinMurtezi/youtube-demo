@@ -50,19 +50,21 @@ function Body() {
               <Link to={video.id}>
                 <div
                   key={video.id}
-                  className="w-full h-full cursor-pointer pb-4"
+                  className="w-full h-full cursor-pointer pb-6 sm:pb-4"
                 >
                   {" "}
                   <img
                     src={video.snippet.thumbnails.medium.url}
-                    className="w-full h-[12rem] sm:h-[9rem]"
+                    className="w-full h-[14rem] sm:h-[9rem]"
                     alt=""
                   />
-                  <h1 className="font-[500] pb-3">{video.snippet.title}</h1>
-                  <p className="text-sm text-[#4b4a4a]">
+                  <h1 className="font-[500] pb-3 px-[2rem]">
+                    {video.snippet.title}
+                  </h1>
+                  <p className="text-sm text-[#4b4a4a] px-[2rem]">
                     {video.snippet.channelTitle}
                   </p>
-                  <p className="text-sm text-[#4b4a4a]">
+                  <p className="text-sm text-[#4b4a4a] px-[2rem]">
                     Published on: {video.snippet.publishedAt.slice(0, 10)}
                   </p>
                 </div>
