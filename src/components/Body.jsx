@@ -19,7 +19,7 @@ function Body() {
   }, []);
 
   return (
-    <div className="w-[100%] pl-1">
+    <div className="w-[100%] pl-0 md:pl-1">
       <div className="flex flex-col">
         <div className="cover w-full flex items-center justify-center min-h-[17rem]">
           <div className="w-[94%] mx-auto h-full text-white flex flex-col justify-center">

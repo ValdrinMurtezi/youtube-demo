@@ -15,7 +15,7 @@ function Main() {
     <div className="w-full flex flex-col ">
       <Header openMenu={openMenu} />
 
-      <div className="w-[100%] h-full flex">
+      <div className="w-[100%] flex m-0 p-0 h-full">
         <div className="w-auto">
           <Sidebar menu={menu} />
         </div>

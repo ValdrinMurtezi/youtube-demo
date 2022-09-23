@@ -7,7 +7,9 @@
 body {
   transform: translate3d(0px, 0px, 0px);
   height: 100%;
-  overflow-x: hidden !important;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 body::-webkit-scrollbar {
@@ -37,7 +39,7 @@ body::-webkit-scrollbar-thumb {
 .tags {
   background-color: rgba(255, 255, 255, 0.986);
   backdrop-filter: blur(20px);
-  width: calc(100% - 0.5%);
+  width: calc(100% -10%);
   row-gap: 0.3rem;
   overflow-x: scroll !important;
 }
@@ -62,6 +64,7 @@ body::-webkit-scrollbar-thumb {
 .videos-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  height: 100% !important;
 }
 
 .sidebar {
@@ -80,16 +83,6 @@ body::-webkit-scrollbar-thumb {
 .scroll:hover::-webkit-scrollbar-thumb {
   visibility: visible;
 }
-/* .scroll::-webkit-scrollbar-track {
-  background-color: aqua;
-} */
-
-/* background: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.63)),
-url(../public/imgs/background.jpg) center center;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-position: relative; */
 
 .cover {
   background: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.726)),
