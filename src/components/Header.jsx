@@ -5,7 +5,7 @@ import "../index.css";
 function Header({ openMenu }) {
   return (
     <div className="w-full flex navbar bg-[#ffffffde]">
-      <div className=" w-full h-[3.5rem] flex items-center justify-center pr-8 space-x-[0rem] lg:space-x-[5rem]">
+      <div className=" w-full h-[3.5rem] flex items-center justify-between md:justify-center pr-8 space-x-[0rem] lg:space-x-[5rem]">
         <div className="w-[150px] md:w-[300px] h-full items-center flex mr-4">
           <div className="w-full flex px-[1.4rem]">
             <button onClick={openMenu}>
@@ -21,7 +21,7 @@ function Header({ openMenu }) {
             </h1>
           </div>
         </div>
-        <div className="w-[95%] md:w-[90%] lg:w-[60%] h-[2.4rem]  flex items-center">
+        <div className="hidden w-[95%] md:w-[90%] lg:w-[60%] h-[2.4rem]  md:flex items-center">
           <input
             type="text"
             placeholder="Search"
@@ -34,7 +34,10 @@ function Header({ openMenu }) {
             <span className="material-symbols-outlined text-[1.7rem]">mic</span>
           </button>
         </div>
-        <div className="flex w-[120px] h-full gap-x-3 ml-0 items-center">
+        <div className="flex w-[130px] md:w-[120px] h-full gap-x-2 sm:gap-x-3 ml-0 items-center">
+          <button className="inline md:hidden">
+            <AiOutlineSearch size="1.5rem" className="text-[#504f4f]" />
+          </button>
           <button>
             <span className="material-symbols-outlined text-[1.5rem]">
               video_call

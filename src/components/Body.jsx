@@ -44,7 +44,7 @@ function Body() {
             </div>
           </div>
         </div>
-        <div className="videos-container w-full gap-5 text-[black] pt-8 bg-[#bbbdbb3d] px-4">
+        <div className="videos-container w-full gap-5 text-[black] pt-8 bg-[#bbbdbb3d] px-0 sm:px-4">
           {data.map((video) => {
             return (
               <Link to={video.id}>
@@ -55,7 +55,7 @@ function Body() {
                   {" "}
                   <img
                     src={video.snippet.thumbnails.medium.url}
-                    className="w-full h-[9rem]"
+                    className="w-full h-[12rem] sm:h-[9rem]"
                     alt=""
                   />
                   <h1 className="font-[500] pb-3">{video.snippet.title}</h1>
