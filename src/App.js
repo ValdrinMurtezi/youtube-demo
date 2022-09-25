@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PlayingVideo from "./components/Playing-Video";
 function App() {
   return (
-    <div className="App">
+    <div className="App w-full min-h-[100vh]">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
