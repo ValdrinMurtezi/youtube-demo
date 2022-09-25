@@ -36,7 +36,9 @@ function Main() {
           Explore
         </h1>
         <h1 className="hover:bg-[#dbdada3b] w-full py-3 text-[10px] text-center flex flex-col items-center cursor-pointer">
-          <span class="material-symbols-outlined text-[2rem]">add_circle</span>
+          <span className="material-symbols-outlined text-[2rem]">
+            add_circle
+          </span>
         </h1>
         <h1 className="hover:bg-[#dbdada3b] w-full py-3 text-[10px] text-center flex flex-col items-center cursor-pointer">
           <span className="material-symbols-outlined text-[1.6rem] ">

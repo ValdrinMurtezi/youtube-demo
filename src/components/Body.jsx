@@ -47,7 +47,7 @@ function Body() {
         <div className="videos-container w-full gap-5 text-[black] pt-8 bg-[#bbbdbb3d] px-0 sm:px-4">
           {data.map((video) => {
             return (
-              <Link to={video.id}>
+              <Link to={video.id} key={video.id}>
                 <div
                   key={video.id}
                   className="w-full h-full cursor-pointer pb-6 sm:pb-4"

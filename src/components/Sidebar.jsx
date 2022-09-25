@@ -108,31 +108,31 @@ function Sidebar({ menu }) {
               EXPLORE
             </h1>
             <h1 className="hover:bg-[#c9c8c84d] w-full px-[1.4rem] py-[0.5rem] flex items-center text-[14px] ursor-pointer">
-              <span class="material-symbols-outlined text-[1.5rem] mr-6">
+              <span className="material-symbols-outlined text-[1.5rem] mr-6">
                 theaters
               </span>
               Movies & Shows
             </h1>
             <h1 className="hover:bg-[#dbdada5d] w-full px-[1.4rem] py-[0.5rem]  flex items-center text-[14px] cursor-pointer">
-              <span class="material-symbols-outlined text-[1.5rem] mr-6">
+              <span className="material-symbols-outlined text-[1.5rem] mr-6">
                 stadia_controller
               </span>
               Gaming
             </h1>
             <h1 className="hover:bg-[#dbdada5d] w-full px-[1.4rem] py-[0.5rem]  flex items-center text-[14px] cursor-pointer">
-              <span class="material-symbols-outlined text-[1.5rem] mr-6">
+              <span className="material-symbols-outlined text-[1.5rem] mr-6">
                 lightbulb
               </span>
               Learning
             </h1>
             <h1 className="hover:bg-[#dbdada5d] w-full px-[1.4rem] py-[0.5rem]  flex items-center text-[14px] cursor-pointer">
-              <span class="material-symbols-outlined text-[1.5rem] mr-6">
+              <span className="material-symbols-outlined text-[1.5rem] mr-6">
                 sports_basketball
               </span>
               Sports
             </h1>
             <h1 className="hover:bg-[#dbdada5d] w-full px-[1.4rem] py-[0.5rem]  flex items-center text-[14px] cursor-pointer">
-              <span class="material-symbols-outlined text-[1.5rem] mr-6">
+              <span className="material-symbols-outlined text-[1.5rem] mr-6">
                 styler
               </span>
               Fashion
